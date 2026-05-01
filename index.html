@@ -572,10 +572,8 @@
 
     <div class="contact-form">
       <h3>Formulaire de devis</h3>
-      <div id="formSuccess" class="form-success">
-        ✅ Votre demande a bien été envoyée !<br>Nous vous recontactons sous 24h.
-      </div>
-      <form id="contactForm" onsubmit="handleSubmit(event)">
+
+      <form id="contactForm" action="https://formspree.io/f/xeenoqjl" method="POST">
         <div class="form-row">
           <div class="form-group">
             <label>Prénom</label>
@@ -628,12 +626,6 @@
   </p>
 </footer>
 
-<script>
-  function handleSubmit(e) {
-    e.preventDefault();
-    document.getElementById('contactForm').style.display = 'none';
-    document.getElementById('formSuccess').style.display = 'block';
-  }
-</script>
+<script></script>
 </body>
 </html>
